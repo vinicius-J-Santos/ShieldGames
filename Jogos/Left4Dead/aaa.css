@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: underline gray;
+}
+
+.container-2 {
+  width: calc(100% - 48px);
+  height: 600px;
+  margin: 24px auto;
+  padding: 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.03) 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  color: #ffffff;
+  display: flex;
+}
+
+.container-2 img {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.container-2 button {
+    background-color: rgba(255, 255, 12, 0.637);
+    border: 1px solid rgb(31, 29, 26);
+    border-radius: 5px;
+    height: 23px;
+    width: 80px;
+}
+
+video {
+    position: absolute;
+    width: 96.4%;
+    height: 343px;
+    object-fit: fill;
+    border-radius: 20px;
+    filter: brightness(20%);
+    left: 1.8%;
+    top: 14%;
+}
+
+.container-3 {
+  max-width: calc(51% - 48px);
+  max-height: 400px;
+  margin: 24px auto;
+  padding: 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.03) 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.container-3 img {
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+.text button {
+    margin: 20px 0 0 25px;
+}
+
+.text img {
+  width:80px;
+  position: absolute;
+  left: 260px;
+  top: 240px
+}
+
+button {
+    cursor: pointer;
+}
+
+.text-2  {
+  position: absolute;
+  top: 62%;
+}
+
+.titulo {
+  position: absolute;
+  left: 47%;
+  top: 55%;
+}
