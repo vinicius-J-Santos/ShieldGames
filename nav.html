@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #2b486e;
+}
+.container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    margin: 1%;
+
+    width: 92%;
+    height: auto;
+
+}
+.logo {
+    margin-left: 2%;
+    transform: scale(1.1);
+}
+.links {
+    width: 90%;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    font-size: 23px;   
+    text-decoration: none;
+}
+a, a:active, a:visited {
+    text-decoration: none;
+    color: #e2e2e2;
+    font-size: 50px;
+    font-weight: bolder;
+    transition: all ease 0.5s;
+}
+a:hover {
+    color: #ffd518;
+    transform: scale(1.2);
+}
+</style>
+
+<body>
+    
+<div class="container">
+    <div><img src="img/Shield.png" alt="" class="logo"></div>
+    <div class="links">
+        <a href="home.html" target="article">HOME</a>
+        <a href="login.html" target="article">LOGIN</a>
+        <a href="rate.html" target="article">RATE</a>
+    </div>
+</div>
+
+</body>
+</html>

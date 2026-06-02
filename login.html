@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(img/beck.png);
+        background-size: 1000px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    fieldset {
+        background-color: #26456e79;
+        border: solid #26456e9f 3px;
+        border-radius: 30px;
+        color: #e2e2e2;
+    }
+
+    form {
+        gap: 30px;
+    }
+
+    input,
+    select {
+        width: auto;
+        height: 20px;
+
+        border-radius: 5px;
+        border: solid black 1px;
+        transition: all ease 0.5s;
+    }
+
+    .pergunta {
+        display: flex;
+        align-items: center;
+
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .botao {
+        display: flex;
+        justify-self: center;
+        width: 70px;
+        height: 40px;
+    }
+
+    .botao:hover {
+        background-color: rgb(180, 180, 180);
+        width: 80px;
+        height: 50px;
+    }
+
+    .botao:active {
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+
+    <!--Background estilo netflix, com a capa da varios jogos-->
+
+    <div class="container">
+        <h1>
+            <fieldset>
+                <legend>Login</legend>
+                <form action="home.html">
+
+                    <div class="pergunta">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="Insira seu primeiro nome" required>
+                        &nbsp
+                        <label for="Snome">Sobrenome: </label>
+                        <input type="text" id="Snome" placeholder="Insira seu sobrenome" required>
+                    </div>
+                    <div class="pergunta">
+                        <label for="idade">Idade: </label>
+                        <input type="number" id="idade" placeholder="Insira sua idade" required>
+                    </div>
+                    <div class="pergunta">
+                        <label for="nomeUS">Nome de usuario: </label>
+                        <input type="text" id="nomeUS" placeholder="Insira seu nome de usuario" required>
+                    </div>
+                    <div class="pergunta">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" placeholder="Insira seu email" required>
+                    </div>
+                    <div class="pergunta">
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" placeholder="Insira sua senha" required>
+                    </div>
+                    <div class="pergunta">
+                        <label for="telefone">Numero de telefone: </label>
+                        <input type="tel" id="telefone" placeholder="Insira seu numero de telefone" required>
+                    </div>
+                    <div class="pergunta">
+                        <label for="intencao">O que você pretende aqui no site?: </label>
+                        <select name="intencao" id="intencao">
+                            <option value="vazio" selected disabled>Selecionar</option>
+                            <option value="leitor">Apenas ver</option>
+                            <option value="avaliador">Deixar minhas notas</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="botao" type="submit" placeholder="Enviar">
+                    </div>
+                </form>
+            </fieldset>
+        </h1>
+    </div>
+
+</body>
+
+</html>

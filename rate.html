@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(img/beck.png);
+        background-size: 1000px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3%;
+    }
+    h1 {
+        color: #e2e2e2;
+    }
+    fieldset {
+        background-color: #26456e79;
+        border: solid #26456e9f 3px;
+        border-radius: 30px;
+    }
+    form {
+        margin: 10px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .estrelas {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: #e2e2e2;
+        font-size: large;
+        width: 20px;
+    }
+    input, textarea, select {
+        border: solid black 1px;
+        border-radius: 5px;
+    }
+    .botao {
+        display: flex;
+        justify-self: center;
+        width: 70px;
+        height: 40px;
+
+        transition: all ease 0.5s;
+    }
+
+    .botao:hover {
+        background-color: rgb(180, 180, 180);
+        width: 80px;
+        height: 50px;
+    }
+
+    .botao:active {
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    
+    <div class="container"> <h1>
+        <fieldset>
+            <legend>Avalie</legend>
+            <form action="">
+
+                <div class="perguntas">
+                    <label for="jogo">Qual jogo do catalogo você quer avaliar?: </label>
+                    <select name="jogo" id="jogo" required>
+                        <option value="default" selected disabled>Selecionar</option>
+                        <optgroup label="Ação">
+                            <option value="godOfWarRagnarok">God of war Ragnarok</option>
+                            <option value="darkSouls2">Dark souls II</option>
+                            <option value="ghostOfYotei">Ghost of yotei</option>
+                            <option value="default" disabled>Mais em breve...</option>
+                        </optgroup>
+                        <optgroup label="Sandbox">
+                            <option value="minecraft">Minecraft</option>
+                            <option value="default" disabled>Mais em breve...</option>
+                        </optgroup>
+                        <optgroup label="FPS">
+                            <option value="left4Dead2">Left 4 dead 2</option>
+                            <option value="default" disabled>Mais em breve...</option>
+                        </optgroup>
+                        <optgroup label="Terror">
+                            <option value="lethalCompany">Lethal company</option>
+                            <option value="default" disabled>Mais em breve...</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="perguntas">
+                    <label for="estrelas">Quantas estrelas ele merece?:</label>
+                    <input type="range" id="estrelas" min="1" max="5" value="1" step="1" oninput="display.value=value" onchange="display.value=value" required>
+                    <input type="text" id="display" value="1" class="estrelas" readonly>
+                </div>
+                <div class="perguntas">
+                    <label for="recomenda">Você recomendaria esse jogo?: </label>
+                    <br> 
+                    <label for="recS">Sim</label> <input type="radio" id="recS" name="recomenda">
+                    &nbsp &nbsp
+                    <label for="recN">Não</label> <input type="radio" id="recN" name="recomenda">
+                </div>
+                <div class="perguntas">
+                    <label for="comunidade">O que você achou da comunidade do jogo?: </label>
+                    <select name="comunidade" id="comunidade" required>
+                        <option value="default" selected disabled>Selecionar</option>
+                        <option value="MTboa">Acolhedora</option>
+                        <option value="boa">Tranquila</option>
+                        <option value="neutro">Neutro</option>
+                        <option value="ruim">Desagradavel</option>
+                        <option value="MTruim">Toxica</option>
+                    </select>
+                </div>
+
+                <div class="perguntas">
+                    <label for="textao">Deixe seu comentario abaixo:</label>
+                    <br>
+                    <textarea name="textao" id="textao" rows="8" cols="52" placeholder="Comente sobre sua experiencia com o jogo" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="botao" value="Enviar">
+                </div>
+
+            </form>
+        </fieldset>
+    </h1> </div>
+
+</body>
+</html>
